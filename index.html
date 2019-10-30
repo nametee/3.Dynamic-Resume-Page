@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing Page Resume</title>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body class="flex-main">
+    <div id="main" class="main">
+        <header class="flex-header" id="header">
+            <span class="nameMe">
+                <h1 onclick="changeName()" onmouseout="changeColorName('blue')" onmouseover="changeColorName('red')" id="fullName" style="color:blue">Pakin Peeratanawanit</h1>
+                <span>Nickname:Tee [-Programmer-]</span>
+            </span>
+            <img class="pictureMe" src="me-3.jpg" alt="Me" />
+        </header> 
+        <div class="" id="experience">
+            <h3>Experience</h3>
+            <h4>Senior Software Engineer</h4>
+            <p>CPF IT Center Co.,Ltd | March 2007 – May 2019</p>
+            <ul>
+                <li>Developed production, test and beta websites using various software programs </li>
+                <li>Supervised team of developers in analysis and creation of software </li>
+                <li>Analyzed solutions and coding fixes for software problems </li>
+                <li>Directed all software design, architecture and programming </li>
+                <li>Gathered, organized and analyzed data for program development </li>
+                <li>Developed mobile applications for android and ios platform</li>
+                <li>Communicated with customers about progress updates, gathered feedback and worked to resolve specific concerns </li>
+            </ul>
+        </div> 
+        <span class="flex-row">
+            <div class="" id="education">
+                <h3>Education</h3>
+                <p>Bachelor of Science  Computer Science    </p>
+                <p>Thammasat University | 2006 </p>
+            </div>
+            <div class="" id="skill">
+                <h3>Skill</h3>
+                <ul>
+                    <li>Design and development </li>
+                    <li>Research and development </li>
+                    <li>Requirements analysis and design phases </li>
+                    <li>SQL expert</li>
+                    <li>Program coding </li>
+                    <li>Troubleshooting </li>
+                </ul>
+            </div>
+            <div class="">
+                <h3 id="specialSkill" onclick="newItemListSpecialSkill()" >Special Skill</h3>
+                <ul id="listSpecialSkill" >
+                    <!--<li>Babysitter</li>
+                    <li>Chatty</li>  -->
+                </ul>
+            </div>
+        </span>
+    </div>
+    <footer>
+        <div class="navbar">
+        <a href="#" class="active" onclick="changeBackgroundColor()">Change background color</a> 
+        </div>
+    </footer>
+    <script> 
+        getListSpecialSkill();
+    </script>
+</body>
+</html>
